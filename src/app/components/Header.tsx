@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React from "react";
 import AddTodo from "@/components/AddTodo";
 
@@ -29,24 +29,24 @@ const Header = ({ todos, onAdd }: HeaderProps) => {
                     <AddTodo onAdd={onAdd} />
                 </div>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-4 bg-white py-4 px-4">
-                <div className="w-full flex flex-col justify-center items-center p-4 lg:p-8 border-4 border-black shadow-sm shadow-black">
+            <div className="px-4 sm:px-20 grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-4 bg-white py-4 px-4">
+                <div className="flex flex-col justify-center items-center p-4 lg:p-8 border-4 border-black shadow-sm shadow-black">
                     <p className="text-3xl md:text-4xl font-bold">{todos.length}</p>
                     <p className="text-lg font-normal">Total</p>
                 </div>
-                <div className="w-full flex flex-col justifty-center items-center p-4 lg:p-8 border-4 border-black shadow-sm shadow-black">
+                <div className="flex flex-col justifty-center items-center p-4 lg:p-8 border-4 border-black shadow-sm shadow-black">
                     <p className="text-3xl md:text-4xl font-bold">
                         {todos.filter((todo) => todo.done === false).length}
                     </p>
                     <p className="text-lg font-normal">Pending</p>
                 </div>
-                <div className="w-full flex flex-col justifty-center items-center p-4 lg:p-8 border-4 border-black shadow-sm shadow-black">
+                <div className="flex flex-col justifty-center items-center p-4 lg:p-8 border-4 border-black shadow-sm shadow-black">
                     <p className="text-3xl md:text-4xl font-bold">
                         {todos.filter((todo) => todo.done === true).length}
                     </p>
                     <p className="text-lg font-normal">Done</p>
                 </div>
-                <div className="w-full flex flex-col justifty-center items-center p-4 lg:p-8 border-4 border-black shadow-sm shadow-black">
+                <div className="flex flex-col justifty-center items-center p-4 lg:p-8 border-4 border-black shadow-sm shadow-black">
                     <p className="text-3xl md:text-4xl font-bold">
                         {todos && todos.length > 0
                             ? Math.round(

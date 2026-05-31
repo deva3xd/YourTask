@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useState } from "react";
 import UpdateTodo from "@/components/UpdateTodo";
 import DeleteTodo from "@/components/DeleteTodo";
@@ -33,7 +33,7 @@ const Todos = ({ todos, onUpdate, onDelete }: HeaderProps) => {
 
     return (
         <section className="px-4 py-4 sm:px-20 bg-white max-w-screen-2xl mx-auto">
-            <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
+            <div className="flex flex-col sm:flex-row justify-between items-center mb-4 gap-4">
                 <h3 className="uppercase text-2xl font-semibold">your tasks</h3>
                 <div className="flex flex-row gap-1">
                     <button

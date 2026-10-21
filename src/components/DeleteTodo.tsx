@@ -1,5 +1,6 @@
 "use client"
-import { FaTrash } from "react-icons/fa";
+
+import { Trash2 } from "lucide-react";
 
 type Todo = {
     id: number;
@@ -14,8 +15,8 @@ type HeaderProps = {
 
 const DeleteTodo = ({ todo, onDelete }: HeaderProps) => {
     return (
-        <button type="button" onClick={() => onDelete(todo.id)}>
-            <FaTrash className="hover:text-red-500" />
+        <button type="button" onClick={() => onDelete(todo.id)} className="p-1 hover:bg-red-100">
+            <Trash2 className="hover:text-red-500" />
         </button>
     )
 }

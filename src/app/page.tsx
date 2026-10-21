@@ -1,6 +1,6 @@
-"use client";
+"use client"
+
 import { useEffect, useState } from "react";
-import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Todos from "@/components/Todos";
 
@@ -39,12 +39,11 @@ const Home = () => {
     };
 
     return (
-        <main>
-            <Navbar />
+        <div className="max-w-7xl mx-auto">
             <Header todos={todos} onAdd={addTodo} />
             <Todos todos={todos} onUpdate={updateTodo} onDelete={deleteTodo} />
-        </main>
-    );
-};
+        </div>
+    )
+}
 
-export default Home;
+export default Home

@@ -11,6 +11,10 @@ export const theme = {
     boxShadow: {
       default: "6px 6px 0px 0px #000",
     },
+    colors: {
+      primary: "#9471f9",
+      secondary: "#eeff6c",
+    }
   },
 };
 export const plugins = [];
